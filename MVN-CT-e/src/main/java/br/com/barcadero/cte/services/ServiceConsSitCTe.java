@@ -50,21 +50,7 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/200
 		 * 
 		 * 	
 		 */
-		SOAPMessage soapMessage = SOAPMessageUtil.buildMessage();
-		SOAPPart soapPart 		= soapMessage.getSOAPPart();
-		SOAPEnvelope envelope = soapPart.getEnvelope();
-		envelope.addNamespaceDeclaration("", getNameSpaceDeclaration());
-		SOAPHeader soapHeader		= envelope.getHeader();
-		SOAPElement cteCabecMsg		= soapHeader.addChildElement("cteCabecMsg", "");
-		SOAPElement cUF				= cteCabecMsg.addChildElement("cUF");
 		
-		SOAPBody soapBody 			= envelope.getBody();
-		SOAPElement soapBodyElem 	= soapBody.addChildElement("cteCabecMsg", "");
-		SOAPElement soapBodyElem1 	= soapBodyElem.addChildElement("", "");
-		soapBodyElem1.addTextNode(xMLMessage);
-		MimeHeaders headers 		= sOPAMessage.getMimeHeaders();
-		// headers.addHeader("SOAPAction", "http://tempuri.org/Enviar");
-		sOPAMessage.saveChanges();
 
 		return null;
 	}
