@@ -1,5 +1,7 @@
 package br.com.barcadero.cte.services;
 
+import java.io.IOException;
+
 import javax.xml.soap.MimeHeaders;
 import javax.xml.soap.SOAPBody;
 import javax.xml.soap.SOAPElement;
@@ -52,6 +54,16 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/200
 		 */
 		
 
+		return null;
+	}
+
+	public String getURLService() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public SOAPMessage buildSoapMessage(String xMLMessage) throws SOAPException, IOException {
+		// TODO Auto-generated method stub
 		return null;
 	}
 
