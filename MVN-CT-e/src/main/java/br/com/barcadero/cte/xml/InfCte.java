@@ -16,6 +16,8 @@ public class InfCte {
 	private String id;
 	@XmlElement(name="ide")
 	private Ide ide;
+	@XmlElement(name="compl")
+	private Compl compl;
 	
 	public String getVersao() {
 		return versao;
@@ -34,6 +36,12 @@ public class InfCte {
 	}
 	public void setIde(Ide ide) {
 		this.ide = ide;
+	}
+	public Compl getCompl() {
+		return compl;
+	}
+	public void setCompl(Compl compl) {
+		this.compl = compl;
 	}
 	
 	
